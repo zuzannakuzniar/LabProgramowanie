@@ -26,10 +26,7 @@ public class Okrag {
     }
 
     public boolean wSrodku(Punkt punkt) {
-        if ((punkt.getX() < promien || punkt.getX() > -promien)
-                && (punkt.getY() < promien || punkt.getY() > -promien)) {
-            return true;
-        }
-        return false;
+        return (punkt.getX() < promien || punkt.getX() > -promien)
+                && (punkt.getY() < promien || punkt.getY() > -promien);
     }
 }
